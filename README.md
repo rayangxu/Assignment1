@@ -21,8 +21,8 @@ const user = userModule.getUserWithParam({ userName: 'example' });
 console.log(user);
 
 const allUsers = userModule.getAllUsers();
-console.log(allUsers);```
-
+console.log(allUsers);
+```
 
 Functions
 addUser({ userName, pass, email, phoneNo }): Adds a new user to the system.
