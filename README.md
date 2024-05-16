@@ -26,11 +26,11 @@ console.log(allUsers);
 ```
 
 ## Functions
-addUser({ userName, pass, email, phoneNo }): Adds a new user to the system.
-getUserWithParam({ userName, uuid, email, phoneNo }): Retrieves a user based on the provided parameter.
-getAllUsers(): Retrieves all users in the system.
-earnRewardsDollars(userName, spentMoney): Adds reward points to a user based on the amount spent.
-addRewardsPointsDirectly(userName, points): Adds reward points directly to a user's account.
-deductRewardsPoints(userName, points): Deducts reward points from a user's account.
-modifyUser({ uuid, newName, newPass, newPhone, newEmail }): Modifies user details based on UUID.
-deleteUser(uuid): Deletes a user based on UUID.
+- addUser({ userName, pass, email, phoneNo }): Adds a new user to the system.
+- getUserWithParam({ userName, uuid, email, phoneNo }): Retrieves a user based on the provided parameter.
+- getAllUsers(): Retrieves all users in the system.
+- earnRewardsDollars(userName, spentMoney): Adds reward points to a user based on the amount spent.
+- addRewardsPointsDirectly(userName, points): Adds reward points directly to a user's account.
+- deductRewardsPoints(userName, points): Deducts reward points from a user's account.
+- modifyUser({ uuid, newName, newPass, newPhone, newEmail }): Modifies user details based on UUID.
+- deleteUser(uuid): Deletes a user based on UUID.
