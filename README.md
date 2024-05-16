@@ -34,3 +34,41 @@ console.log(allUsers);
 - deductRewardsPoints(userName, points): Deducts reward points from a user's account.
 - modifyUser({ uuid, newName, newPass, newPhone, newEmail }): Modifies user details based on UUID.
 - deleteUser(uuid): Deletes a user based on UUID.
+
+## Code used to test functions
+
+```
+console.log('adding user {userName: \'123\',pass:\'123\',email:\'email@email.com\', phoneNo:858585}')
+addUser({userName: '123',pass:'123',email:'email@email.com', phoneNo:858585});
+console.log('getting user with UserName')
+console.log(getUserWithParam({userName: '123'}));
+console.log('getting user with uuid')
+console.log(getUserWithParam({uuid: 'd38be9ed-2325-4d60-bd0d-f3a6fea92402'}));
+console.log('getting user with email')
+console.log(getUserWithParam({email:'email@email.com'}));
+console.log('getting user with phoneNo')
+console.log(getUserWithParam({phoneNo:858585}));
+console.log('getting all users')
+console.log(getAllUsers());
+console.log(getUserWithParam());
+console.log('spent 44 dollars')
+earnRewardsDollars('123', 44);
+console.log('add 500 points to account')
+addRewardsPointsDirectly('123',500)
+console.log('deduct 500 points')
+deductRewardsPoints('123',500)
+console.log('deduct more than owned')
+deductRewardsPoints('123',5000)
+console.log('modify user')
+modifyUser({
+    uuid : 'd38be9ed-2325-4d60-bd0d-f3a6fea92402',
+    newName : 'SampleUser2',
+    newPass : 'SamplePassword2',
+    newPhone : 123456789,
+    newEmail : 'SampleEmail@Sample.com2',
+})
+console.log(getAllUsers());
+console.log('Delete user')
+deleteUser(`d38be9ed-2325-4d60-bd0d-f3a6fea92402`);
+console.log(getAllUsers());
+```
