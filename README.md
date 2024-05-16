@@ -7,7 +7,8 @@
 
 ## Usage
 
-```const userModule = require('user-management-module');
+```
+const userModule = require('user-management-module');
 
 // Example usage
 userModule.addUser({
@@ -24,7 +25,7 @@ const allUsers = userModule.getAllUsers();
 console.log(allUsers);
 ```
 
-Functions
+## Functions
 addUser({ userName, pass, email, phoneNo }): Adds a new user to the system.
 getUserWithParam({ userName, uuid, email, phoneNo }): Retrieves a user based on the provided parameter.
 getAllUsers(): Retrieves all users in the system.
